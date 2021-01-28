@@ -27,6 +27,7 @@ h1 {
   --shadow: #17222d;
   --border-icon: #eff4f9;
   --background-gray: #eff4f9;
+  --title-gray: #445566;
 }
 
 /* Descrição acima do Header */
@@ -115,25 +116,29 @@ h1 {
 
 #form {
   display: flex;
-  left: 61%;
+  left: 60%;
   top: 50%;
   position: absolute;
 
-  box-shadow: 5px 5px 8px var(--shadow);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
 }
 
 #email {
   font-size: 18px;
   font-weight: 500;
-  color: var(--gray);
 
-  padding-top: 15px;
+  width: 320px;
+  height: 50px;
+
   padding-left: 20px;
-  padding-right: 100px;
-  padding-bottom: 15px;
 
   border-radius: 5px 0px 0px 5px;
   border: none;
+}
+
+::placeholder {
+  color: var(--gray);
 }
 
 #registerButton {
@@ -145,10 +150,7 @@ h1 {
 
   background-color: var(--pumpkin);
 
-  padding-top: 9px;
-  padding-right: 50px;
-  padding-left: 20px;
-  padding-bottom: 9px;
+  width: 180px;
 
   border-radius: 0px 5px 5px 0px;
   border: none;
@@ -175,13 +177,15 @@ h1 {
 }
 
 .OurHomeIsInSea img {
-  box-shadow: 4px 4px 40px 2px var(--shadow); /* MELHORAR ESTA SOMBRA */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
 }
 
 .map img {
   margin-top: -100px;
   margin-left: 60px;
-  box-shadow: 4px 4px 40px 2px var(--shadow); /* MELHORAR ESTA SOMBRA */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
 }
 
 .descriptionIcons p,
@@ -297,6 +301,7 @@ h1 {
 
 /* Plans */
 #plans {
+  /* BACKGROUND */
   width: 100%;
   height: 750px;
 
@@ -305,197 +310,241 @@ h1 {
   margin-top: 250px;
 }
 
-#plans img {
+.titleAndIcon img {
   position: absolute;
-  top: 201%;
-  left: 46%;
+  top: 200.7%;
+  left: 44%;
 }
 
-#plans h1 {
+.titleAndIcon h1 {
   font-size: 72px;
   font-weight: lighter;
+  color: var(--title-gray);
 
-  position: absolute;
-  top: 215%;
-  left: 46%;
+  padding-top: 100px;
+
+  display: flex;
+  justify-content: center;
 }
 
-.pricesOfOurPlans {
+#backgroundDivKids {
   width: 370px;
   height: 435px;
   background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
 
   position: absolute;
-  top: 230%;
-  left: 45px;
-
-  border-radius: 5px;
-  box-shadow: 1px 2px 8px 2px var(--shadow); /* MELHORAR ESTA SOMBRA */
+  top: 235%;
+  left: 5%;
 }
 
-.kids img {
-  margin-left: 70px;
+#backgroundDivKids img {
+  margin-top: -20px;
 }
 
 .kids h1 {
-  font-family: "Nunito", sans-serif;
-  font-size: 24px;
-  text-transform: uppercase;
-
   display: flex;
   justify-content: center;
 
-  margin-top: 45px;
+  font-family: "Nunito", sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: var(--title-gray);
+
+  margin-top: 20px;
+  padding-bottom: 5px;
+}
+
+.kids p {
+  font-weight: bold;
+  font-size: 14px;
+  color: var(--blue);
+  text-align: left;
+
+  margin-top: 20px;
+  margin-left: 70px;
   margin-bottom: 20px;
 }
 
-#kids img {
-  position: absolute;
-  top: -4.5%;
-  left: 105px;
-}
-
-.kids ul li {
+.kidsDescriptionPlans {
   list-style: none;
-}
+  text-align: left;
 
-.listIcon img {
-  display: flex;
-  float: left;
-
-  margin-top: 9px;
-  margin-left: 80px;
-  margin-right: 10px;
-}
-
-.firstItemOfTheClass {
   margin-top: 30px;
-}
-
-.lastItemOfTheClass {
+  margin-left: 75px;
   margin-bottom: 30px;
 }
 
-.kids b {
-  font-family: "Nunito", sans-serif;
-  font-weight: bold;
-  color: var(--blue);
-
-  display: flex;
-
-  margin-top: 20px;
-  margin-left: 80px;
+.kidsDescriptionPlans img {
+  padding-right: 5px;
 }
 
-.kids button {
-  font-size: 18px;
-  font-weight: 500;
-  line-height: 1.5;
-  color: white;
-  text-transform: uppercase;
+.btnKids input {
+  width: 230px;
+  height: 40px;
 
+  font-family: "Nunito", sans-serif;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: lighter;
+  color: white;
   background-color: var(--dark-blue);
 
-  padding-top: 9px;
-  padding-right: 50px;
-  padding-left: 20px;
-  padding-bottom: 9px;
-
-  border-radius: 5px;
   border: none;
-  cursor: pointer;
+  border-radius: 5px;
 
-  margin-top: 35px;
-  margin-left: 75px;
+  margin-top: 20px;
 }
 
-.adultPlans {
+/* -------- */
+#backgroundDivAdults {
   width: 370px;
   height: 435px;
   background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
 
   position: absolute;
-  top: 230%;
-  left: 560px;
-
-  border-radius: 5px;
-  box-shadow: 1px 2px 8px 2px var(--shadow); /* MELHORAR ESTA SOMBRA */
+  top: 235%;
+  left: 525px;
 }
 
-.adult img {
-  margin-left: 70px;
+#backgroundDivAdults img {
+  margin-top: -20px;
+  padding-left: 10px;
 }
 
-.adult h1 {
-  font-family: "Nunito", sans-serif;
-  font-size: 24px;
-  text-transform: uppercase;
-
+.adults h1 {
   display: flex;
   justify-content: center;
 
-  margin-top: 45px;
+  font-family: "Nunito", sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: var(--title-gray);
+
+  margin-top: 20px;
+  padding-bottom: 5px;
+}
+
+.adults p {
+  font-weight: bold;
+  font-size: 14px;
+  color: var(--blue);
+  text-align: left;
+
+  margin-top: 20px;
+  margin-left: 70px;
   margin-bottom: 20px;
 }
 
-#adult img {
-  position: absolute;
-  top: -4.5%;
-  left: 15px;
-  right: 15px;
-}
-
-.adult ul li {
+.adultsDescriptionPlans {
   list-style: none;
-}
+  text-align: left;
 
-.listIcon img {
-  display: flex;
-  float: left;
-
-  margin-top: 9px;
-  margin-left: 80px;
-  margin-right: 10px;
-}
-
-.firstItemOfTheClass {
   margin-top: 30px;
-}
-
-.lastItemOfTheClass {
+  margin-left: 75px;
   margin-bottom: 30px;
 }
 
-.adult b {
-  font-family: "Nunito", sans-serif;
-  font-weight: bold;
-  color: var(--blue);
-
-  display: flex;
-
-  margin-top: 20px;
-  margin-left: 80px;
+.adultsDescriptionPlans img {
+  padding-right: 5px;
 }
 
-.adult button {
-  font-size: 18px;
-  font-weight: 500;
-  line-height: 1.5;
-  color: white;
-  text-transform: uppercase;
+.btnAdults input {
+  width: 230px;
+  height: 40px;
 
+  font-family: "Nunito", sans-serif;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: lighter;
+  color: white;
   background-color: var(--dark-blue);
 
-  padding-top: 9px;
-  padding-right: 50px;
-  padding-left: 20px;
-  padding-bottom: 9px;
-
-  border-radius: 5px;
   border: none;
-  cursor: pointer;
+  border-radius: 5px;
 
-  margin-top: 35px;
-  margin-left: 75px;
+  margin-top: 20px;
 }
+
+/* --------- */
+#backgroundDivProfessionals {
+  width: 370px;
+  height: 435px;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+
+  position: absolute;
+  top: 235%;
+  right: 5%;
+}
+
+#backgroundDivProfessionals img {
+  margin-top: -20px;
+  padding-left: 10px;
+}
+
+.professionals h1 {
+  display: flex;
+  justify-content: center;
+
+  font-family: "Nunito", sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: var(--title-gray);
+
+  margin-top: 20px;
+  padding-bottom: 5px;
+}
+
+.professionals p {
+  font-weight: bold;
+  font-size: 14px;
+  color: var(--blue);
+  text-align: left;
+
+  margin-top: 20px;
+  margin-left: 70px;
+  margin-bottom: 20px;
+}
+
+.professionalsDescriptionPlans {
+  list-style: none;
+  text-align: left;
+
+  margin-top: 30px;
+  margin-left: 75px;
+  margin-bottom: 30px;
+}
+
+.professionalsDescriptionPlans img {
+  padding-right: 5px;
+}
+
+.btnProfessionals input {
+  width: 230px;
+  height: 40px;
+
+  font-family: "Nunito", sans-serif;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: lighter;
+  color: white;
+  background-color: var(--pumpkin);
+
+  border: none;
+  border-radius: 5px;
+
+  margin-top: 20px;
+}
+
 /* END | Plans */
